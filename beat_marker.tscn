@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuyocnxprvqty"]
+
+[ext_resource type="Script" path="res://beat_marker.gd" id="1_6cvho"]
+[ext_resource type="Texture2D" uid="uid://c1gxxldc3ogce" path="res://art/beat_marker.png" id="1_jbnjp"]
+
+[node name="beat_marker" type="Node2D"]
+modulate = Color(1, 1, 0.0980392, 1)
+script = ExtResource("1_6cvho")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jbnjp")

@@ -1,0 +1,214 @@
+[gd_scene load_steps=10 format=3 uid="uid://dvnp0ku1xfrrw"]
+
+[ext_resource type="Texture2D" uid="uid://c6my2beifi1v5" path="res://art/stage.png" id="1_ncvtk"]
+[ext_resource type="PackedScene" uid="uid://c8ad4ttou0fap" path="res://guy.tscn" id="1_vfmra"]
+[ext_resource type="PackedScene" uid="uid://d4y5oj0c2whf" path="res://beat.tscn" id="2_6gw32"]
+[ext_resource type="PackedScene" uid="uid://cokew7sa1svcc" path="res://audio.tscn" id="3_2rqth"]
+[ext_resource type="PackedScene" uid="uid://ct161jf7tciwj" path="res://player.tscn" id="5_mfnox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wawb"]
+size = Vector2(20, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbqvj"]
+resource_local_to_scene = true
+size = Vector2(20, 1000)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mckqk"]
+size = Vector2(14, 62.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_npitc"]
+size = Vector2(95, 20)
+
+[node name="main" type="Node"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(480, 270)
+texture = ExtResource("1_ncvtk")
+
+[node name="audio" parent="." instance=ExtResource("3_2rqth")]
+start = 130
+
+[node name="beat" parent="." instance=ExtResource("2_6gw32")]
+start = 130
+
+[node name="dj" type="Node" parent="."]
+
+[node name="guy15" parent="dj" instance=ExtResource("1_vfmra")]
+modulate = Color(0.811765, 0.811765, 0.0980392, 1)
+position = Vector2(481, 99)
+
+[node name="guys" type="Node" parent="."]
+
+[node name="guy" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(133, 303)
+
+[node name="guy2" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(363, 274)
+
+[node name="guy6" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(440, 393)
+
+[node name="guy7" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(551, 311)
+
+[node name="guy8" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(744, 451)
+
+[node name="guy9" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(670, 412)
+
+[node name="guy10" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(573, 371)
+
+[node name="guy11" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(634, 275)
+
+[node name="guy12" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(459, 275)
+
+[node name="guy13" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(304, 366)
+
+[node name="guy14" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(426, 480)
+
+[node name="guy3" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(589, 468)
+
+[node name="guy4" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(687, 335)
+
+[node name="guy5" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(311, 452)
+
+[node name="guy15" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(323, 279)
+
+[node name="guy16" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(553, 250)
+
+[node name="guy17" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(630, 369)
+
+[node name="guy18" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(741, 287)
+
+[node name="guy19" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(934, 427)
+
+[node name="guy20" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(860, 388)
+
+[node name="guy21" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(763, 347)
+
+[node name="guy22" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(824, 251)
+
+[node name="guy23" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(649, 251)
+
+[node name="guy24" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(494, 342)
+
+[node name="guy25" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(616, 456)
+
+[node name="guy26" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(779, 444)
+
+[node name="guy27" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(877, 311)
+
+[node name="guy28" parent="guys" instance=ExtResource("1_vfmra")]
+modulate = Color(0, 0, 0.603922, 1)
+position = Vector2(501, 428)
+
+[node name="guy" parent="." instance=ExtResource("5_mfnox")]
+position = Vector2(495, 392)
+
+[node name="walls" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D"]
+position = Vector2(0, 354)
+shape = SubResource("RectangleShape2D_0wawb")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="walls"]
+position = Vector2(960, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D2"]
+position = Vector2(0, 356.5)
+shape = SubResource("RectangleShape2D_0wawb")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="walls"]
+position = Vector2(-679, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D3"]
+position = Vector2(1164, 205)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_sbqvj")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="walls"]
+position = Vector2(-682, 290)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D4"]
+position = Vector2(1161, 205)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_sbqvj")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="walls"]
+position = Vector2(410, 18)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D5"]
+position = Vector2(36, 59.5)
+shape = SubResource("RectangleShape2D_mckqk")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="walls"]
+position = Vector2(482, 18)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D6"]
+position = Vector2(36, 58.75)
+shape = SubResource("RectangleShape2D_mckqk")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="walls"]
+position = Vector2(482, 18)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D7"]
+position = Vector2(-0.5, 31)
+shape = SubResource("RectangleShape2D_npitc")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="walls"]
+position = Vector2(481, 84)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/StaticBody2D8"]
+position = Vector2(-0.5, 31)
+shape = SubResource("RectangleShape2D_npitc")

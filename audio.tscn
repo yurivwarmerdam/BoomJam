@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cokew7sa1svcc"]
+
+[ext_resource type="Script" path="res://audio_tst.gd" id="1_xxs2w"]
+[ext_resource type="AudioStream" uid="uid://bimbuengll2ln" path="res://audio/Astral Projection Boom Festival 2023 [TubeRipper.com].mp3" id="2_g7uml"]
+
+[node name="audio" type="Node"]
+script = ExtResource("1_xxs2w")
+
+[node name="player" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_g7uml")

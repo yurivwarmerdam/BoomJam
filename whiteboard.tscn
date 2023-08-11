@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://co5ycwldyvw0w"]
+
+[ext_resource type="Script" path="res://whiteboard.gd" id="1_3e7ay"]
+
+[node name="whiteboard" type="Node"]
+script = ExtResource("1_3e7ay")
